@@ -1,0 +1,731 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+  <head>
+    <title>Leeum 切版練習</title>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/bootstrap.css" />
+    <script
+      src="https://kit.fontawesome.com/aaf4e01fe3.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
+  </head>
+  <body>
+    <!-- 導覽列-->
+    <nav class="navbar navigation-wrap navbar-expand-lg navbar-light">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#">
+          <img src="picture/leeumLogo.png" alt="Leeum" width="100%" />
+        </a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-toggle="collapse"
+          data-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav ml-auto py-4 py-md-0">
+            <li class="nav-item pl-4 pl-md-0 ml-0 ml-md-4">
+              <a class="nav-link" href="#">VISIT</a>
+            </li>
+            <li class="nav-item pl-4 pl-md-0 ml-0 ml-md-4">
+              <a
+                class="nav-link dropdown-toggle"
+                data-bs-toggle="dropdown"
+                href="#"
+                aria-expanded="true"
+                >EXHIBITION</a
+              >
+              <div class="dropdown-menu show">
+                <a class="dropdown-item" href="#">Current</a>
+                <a class="dropdown-item" href="#">Upcoming</a>
+                <a class="dropdown-item" href="#">Past</a>
+              </div>
+            </li>
+            <li class="nav-item pl-4 pl-md-0 ml-0 ml-md-4">
+              <a
+                class="nav-link dropdown-toggle"
+                data-bs-toggle="dropdown"
+                href="#"
+                aria-expanded="true"
+                >COLLECTION</a
+              >
+              <div class="dropdown-menu show">
+                <a class="dropdown-item" href="#">Traditional Korean Art</a>
+                <a class="dropdown-item" href="#">Modern & Contemporary Art</a>
+              </div>
+            </li>
+
+            <li class="nav-item pl-4 pl-md-0 ml-0 ml-md-4">
+              <a class="nav-link" href="#">PROGRAM</a>
+            </li>
+            <li class="nav-item pl-4 pl-md-0 ml-0 ml-md-4">
+              <a class="nav-link" href="#">SPACE</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <!-- 麵包屑 (Breadcrumb)-->
+    <nav aria-label="breadcrumb">
+      <ol class="breadcrumb">
+        <li class="breadcrumb-item"><a class="nav-link" href="#">Home</a></li>
+
+        <li class="breadcrumb-item active" aria-current="page">Library</li>
+      </ol>
+    </nav>
+    <!-- banner-->
+    <div class="card bg-dark text-white">
+      <img src="picture/head-main.jpg" class="card-img" alt="leeum space" />
+      <div class="linear-gradien"></div>
+      <div class="card-img-overlay">
+        <h5 class="display-1">Space</h5>
+        <p class="h3">
+          INTERACTING WITH LIVING ART AT LEEUM, LEEUM MUSEUM OF ART.
+        </p>
+      </div>
+    </div>
+    <!-- 分頁-->
+    <div class="container bg-light">
+      <div class="row justify-content-center">
+        <a href="#" style="color: #1a1a1a">Architecture</a>
+        <a href="#">Facilities</a>
+        <a href="#">Renewal</a>
+        <div id="indicator"></div>
+      </div>
+    </div>
+    <!-- 主要內容-->
+    <div class="container main-content">
+      <!-- architecture-->
+      <div class="index-architecture" id="index-architecture">
+        <div class="card-body d-flex">
+          <h5 class="card-title">Architecture</h5>
+          <p class="card-text">
+            Located at Han Nam Dong on the slope of Namsan and flanked by the
+            Hangang River, Leeum provides a uniquely harmonious view of nature
+            and architecture. MUSEUM 1, which occupies a site of 2,300㎡ with a
+            total floor area of 9,800㎡, displays Korean traditional art, and
+            MUSEUM 2, on a site of 1,800㎡, with a total floor area of 5,200㎡,
+            houses contemporary art. Child Education & Culture Center, located
+            at the entrance of Leeum, is built in an area of 4,000㎡ with a
+            total floor area of 13,300㎡. This Center is an educational facility
+            for improving the creativity of future generations. MUSEUM 1 and
+            MUSEUM 2showcase critically acclaimed artworks. Unlike MUSEUM 1 and
+            2, Child Education & Culture Center, which has educational and
+            exhibition functions, is a free space for contemporary and future
+            art. Each of the three buildings was designed with innovative
+            techniques that reflect each architect’s unique style.
+          </p>
+        </div>
+        <img
+          src="picture/m1_t3_img3.jpg"
+          class="mx-auto d-block"
+          style="max-width: 480px"
+        />
+        <div class="col card-text">
+          MUSEUM 1 was designed by the Swiss architect Mario Botta and MUSEUM 2
+          which stands alongside MUSEUM 1, was designed by the French architect
+          Jean Nouvel. These museum buildings, along with Child Education &
+          Culture Center, compose a public cultural complex.The three architects
+          gained fame from their fresh visions of city culture and their unique
+          designs. The buildings of Leeum built over a period of eight years
+          (1996-2004), comprise a harmonious cultural complex of buildings with
+          distinct character, internationally recognized in modern architecture.
+        </div>
+        <div
+          id="carouselExampleInterval"
+          class="carousel slide"
+          data-bs-ride="carousel"
+        >
+          <div class="carousel-inner">
+            <div class="carousel-item active" data-bs-interval="10000">
+              <div class="carousel-img">
+                <img
+                  src="picture/M1_ex2.jpg"
+                  class="figure-img img-fluid d-block w-100"
+                  alt="MUSEUM 1"
+                />
+                <div class="figure-caption">MUSEUM 1</div>
+              </div>
+
+              <div class="carousel-caption d-none d-md-block">
+                <p>
+                  Mario Botta, who emphasized that museum architecture should
+                  stimulate sanctity and consecration in the way that church
+                  architecture used to do, employed this philosophy in designing
+                  MUSEUM 1.
+                </p>
+                <button type="button" class="btn btn-light">
+                  More view
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="22"
+                    height="22"
+                    viewBox="0 0 22 22"
+                    fill="none"
+                  >
+                    <path
+                      d="M11.0011 20.091C16.0218 20.091 20.092 16.0209 20.092 11.0001C20.092 5.97932 16.0218 1.90918 11.0011 1.90918C5.9803 1.90918 1.91016 5.97932 1.91016 11.0001C1.91016 16.0209 5.9803 20.091 11.0011 20.091Z"
+                      stroke="#1A1A1A"
+                      stroke-width="2"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                    <path
+                      d="M11 14.636L14.6364 10.9996L11 7.36328"
+                      stroke="#1A1A1A"
+                      stroke-width="2"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                    <path
+                      d="M7.36328 11H14.636"
+                      stroke="#1A1A1A"
+                      stroke-width="2"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                  </svg>
+                </button>
+              </div>
+            </div>
+            <div class="carousel-item" data-bs-interval="10000">
+              <div class="carousel-img">
+                <img
+                  src="picture/M2_ex2.jpg"
+                  class="figure-img img-fluid d-block w-100"
+                  alt="MUSEUM 2"
+                />
+                <div class="figure-caption">MUSEUM 2</div>
+              </div>
+
+              <div class="carousel-caption d-none d-md-block">
+                <p>
+                  The Leeum, Samsung Museum of Art’s MUSEUM 2 envisioned Jean
+                  Nouvel’s design process. With trees on the ground, the
+                  structure of Jean Nouvel’s MUSEUM 2, which grandly arises from
+                  the carved ground, symbolizes the endless generation of
+                  contemporary art. The main components of the overground are
+                  exterior glass walls and rectangular cubes of various sizes.
+                </p>
+                <button type="button" class="btn btn-light">
+                  More view
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="22"
+                    height="22"
+                    viewBox="0 0 22 22"
+                    fill="none"
+                  >
+                    <path
+                      d="M11.0011 20.091C16.0218 20.091 20.092 16.0209 20.092 11.0001C20.092 5.97932 16.0218 1.90918 11.0011 1.90918C5.9803 1.90918 1.91016 5.97932 1.91016 11.0001C1.91016 16.0209 5.9803 20.091 11.0011 20.091Z"
+                      stroke="#1A1A1A"
+                      stroke-width="2"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                    <path
+                      d="M11 14.636L14.6364 10.9996L11 7.36328"
+                      stroke="#1A1A1A"
+                      stroke-width="2"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                    <path
+                      d="M7.36328 11H14.636"
+                      stroke="#1A1A1A"
+                      stroke-width="2"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                  </svg>
+                </button>
+              </div>
+            </div>
+            <div class="carousel-item" data-bs-interval="10000">
+              <div class="carousel-img">
+                <img
+                  src="picture/M3_ex2.jpg"
+                  class="figure-img img-fluid d-block w-100"
+                  alt="Child Education & Culture Center"
+                />
+                <div class="figure-caption">
+                  Child Education & Culture Center
+                </div>
+              </div>
+
+              <div class="carousel-caption d-none d-md-block">
+                <p>
+                  You can see the designs of Rem KoolHaas, who considers
+                  architecture a flow and a city, in The Leeum, Museum of Art’s
+                  master plan and Child Education & Culture Center.
+                </p>
+                <button type="button" class="btn btn-light">
+                  More view
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="22"
+                    height="22"
+                    viewBox="0 0 22 22"
+                    fill="none"
+                  >
+                    <path
+                      d="M11.0011 20.091C16.0218 20.091 20.092 16.0209 20.092 11.0001C20.092 5.97932 16.0218 1.90918 11.0011 1.90918C5.9803 1.90918 1.91016 5.97932 1.91016 11.0001C1.91016 16.0209 5.9803 20.091 11.0011 20.091Z"
+                      stroke="#1A1A1A"
+                      stroke-width="2"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                    <path
+                      d="M11 14.636L14.6364 10.9996L11 7.36328"
+                      stroke="#1A1A1A"
+                      stroke-width="2"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                    <path
+                      d="M7.36328 11H14.636"
+                      stroke="#1A1A1A"
+                      stroke-width="2"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                  </svg>
+                </button>
+              </div>
+            </div>
+          </div>
+          <button
+            class="carousel-control-prev"
+            type="button"
+            data-bs-target="#carouselExampleInterval"
+            data-bs-slide="prev"
+          >
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button
+            class="carousel-control-next"
+            type="button"
+            data-bs-target="#carouselExampleInterval"
+            data-bs-slide="next"
+          >
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
+      </div>
+      <!-- architects-->
+      <div class="index-architects" id="index-architects">
+        <div class="card-body d-flex">
+          <h5 class="card-title">Architects</h5>
+          <p class="card-text">
+            Mario Botta visualized the beauty of Korean porcelain by using terra
+            cotta tiles, which symbolize earth and fire. Jean Nouvel, the first
+            in the world to use glass and rusted stainless steel, expressed the
+            cutting-edge quality of contemporary art through his design. Rem
+            KoolHaas used rare materials, such as black concrete, to create
+            Black Box, and designed a futuristic architectural space that
+            appears to be floating in the air.Leeum designed by three
+            internationally acclaimed architects: Jean Nouvel, Rem Koolhaas, and
+            Mario Botta, each with three distinctive styles, represents a rare
+            historical incident in that it brought together some of the greatest
+            architects of our time to build one museum.
+          </p>
+        </div>
+        <div
+          id="carouselExampleInterval2"
+          class="carousel slide"
+          data-bs-ride="carousel"
+        >
+          <div class="carousel-inner">
+            <div class="carousel-item active" data-bs-interval="10000">
+              <div class="carousel-img">
+                <img
+                  src="picture/sample_45.PNG"
+                  class="figure-img img-fluid d-block w-100"
+                  alt="Mario Botta"
+                />
+                <div class="figure-caption">Mario Botta</div>
+              </div>
+
+              <div class="carousel-caption d-none d-md-block">
+                <p>
+                  Mario Botta was born in Mendrisio-Ticino, Switzerland in 1943,
+                  worked mainly in the Ticino area, and has since gained a
+                  world-wide reputation by strongly expressing a local identity.
+                </p>
+                <button type="button" class="btn btn-light">
+                  More view
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="22"
+                    height="22"
+                    viewBox="0 0 22 22"
+                    fill="none"
+                  >
+                    <path
+                      d="M11.0011 20.091C16.0218 20.091 20.092 16.0209 20.092 11.0001C20.092 5.97932 16.0218 1.90918 11.0011 1.90918C5.9803 1.90918 1.91016 5.97932 1.91016 11.0001C1.91016 16.0209 5.9803 20.091 11.0011 20.091Z"
+                      stroke="#1A1A1A"
+                      stroke-width="2"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                    <path
+                      d="M11 14.636L14.6364 10.9996L11 7.36328"
+                      stroke="#1A1A1A"
+                      stroke-width="2"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                    <path
+                      d="M7.36328 11H14.636"
+                      stroke="#1A1A1A"
+                      stroke-width="2"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                  </svg>
+                </button>
+              </div>
+            </div>
+            <div class="carousel-item" data-bs-interval="10000">
+              <div class="carousel-img">
+                <img
+                  src="picture/sample_47.PNG"
+                  class="figure-img img-fluid d-block w-100"
+                  alt="Jean Nouvel"
+                />
+                <div class="figure-caption">Jean Nouvel</div>
+              </div>
+
+              <div class="carousel-caption d-none d-md-block">
+                <p>
+                  The French-born architect, Jean Nouvel, is a world-renowned
+                  figure not only in architecture but in many areas of culture
+                  and arts. Born in 1945, he got admitted to the prestigious
+                  École nationale supérieure des Beaux-Arts in Paris as the
+                  first in his class. His genius was already in the working at
+                  that young age.
+                </p>
+                <button type="button" class="btn btn-light">
+                  More view
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="22"
+                    height="22"
+                    viewBox="0 0 22 22"
+                    fill="none"
+                  >
+                    <path
+                      d="M11.0011 20.091C16.0218 20.091 20.092 16.0209 20.092 11.0001C20.092 5.97932 16.0218 1.90918 11.0011 1.90918C5.9803 1.90918 1.91016 5.97932 1.91016 11.0001C1.91016 16.0209 5.9803 20.091 11.0011 20.091Z"
+                      stroke="#1A1A1A"
+                      stroke-width="2"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                    <path
+                      d="M11 14.636L14.6364 10.9996L11 7.36328"
+                      stroke="#1A1A1A"
+                      stroke-width="2"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                    <path
+                      d="M7.36328 11H14.636"
+                      stroke="#1A1A1A"
+                      stroke-width="2"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                  </svg>
+                </button>
+              </div>
+            </div>
+            <div class="carousel-item" data-bs-interval="10000">
+              <div class="carousel-img">
+                <img
+                  src="picture/sample_49.PNG"
+                  class="figure-img img-fluid d-block w-100"
+                  alt="Rem Koolhaas,"
+                />
+                <div class="figure-caption">Rem Koolhaas,</div>
+              </div>
+
+              <div class="carousel-caption d-none d-md-block">
+                <p>
+                  Rem Koolhaas, one of the world’s most influential authorities
+                  on urban architecture, was born in 1944 in Rotterdam, in the
+                  Netherlands. He has lived in many countries since his early
+                  childhood, which included Indonesia and the United States, and
+                  also has worked as a journalist and playwright as well.
+                </p>
+                <button type="button" class="btn btn-light">
+                  More view
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="22"
+                    height="22"
+                    viewBox="0 0 22 22"
+                    fill="none"
+                  >
+                    <path
+                      d="M11.0011 20.091C16.0218 20.091 20.092 16.0209 20.092 11.0001C20.092 5.97932 16.0218 1.90918 11.0011 1.90918C5.9803 1.90918 1.91016 5.97932 1.91016 11.0001C1.91016 16.0209 5.9803 20.091 11.0011 20.091Z"
+                      stroke="#1A1A1A"
+                      stroke-width="2"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                    <path
+                      d="M11 14.636L14.6364 10.9996L11 7.36328"
+                      stroke="#1A1A1A"
+                      stroke-width="2"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                    <path
+                      d="M7.36328 11H14.636"
+                      stroke="#1A1A1A"
+                      stroke-width="2"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                  </svg>
+                </button>
+              </div>
+            </div>
+          </div>
+          <button
+            class="carousel-control-prev"
+            type="button"
+            data-bs-target="#carouselExampleInterval2"
+            data-bs-slide="prev"
+          >
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button
+            class="carousel-control-next"
+            type="button"
+            data-bs-target="#carouselExampleInterval2"
+            data-bs-slide="next"
+          >
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
+      </div>
+
+      <!-- footer-->
+      <footer>
+        <div class="footer-up">
+          <div class="footer-safe-block">
+            <div class="subscribe-block">
+              <div class="mb-3">
+                <label for="exampleFormControlInput1" class="form-label"
+                  >Subscribe to our newsletter</label
+                >
+                <div class="input-block">
+                  <input
+                    type="email"
+                    class="form-control"
+                    id="exampleFormControlInput1"
+                    placeholder="Email address"
+                  />
+                  <i class="fa-solid fa-arrow-right" style="color: #1a1a1a"></i>
+                </div>
+              </div>
+            </div>
+            <div class="footer-sitemap">
+              <div class="footer-sitemap-block">
+                <div class="footer-sitemap-links no-ul">
+                  <div class="sitemap-title">
+                    <p class="footer-sitemap bold"><b>About</b></p>
+                  </div>
+                  <div class="sitemap-title">
+                    <a href="＃" class="footer-sitemap-link"
+                      >About Us
+                      <div class="footer-sitemap-line"></div
+                    ></a>
+                  </div>
+                  <div class="sitemap-title">
+                    <a href="＃" class="footer-sitemap-link"
+                      >Notice
+                      <div class="footer-sitemap-line"></div
+                    ></a>
+                  </div>
+                  <div class="sitemap-title">
+                    <a href="＃" class="footer-sitemap-link"
+                      >Collection
+                      <div class="footer-sitemap-line"></div
+                    ></a>
+                  </div>
+                  <div class="sitemap-title">
+                    <a href="＃" class="footer-sitemap-link"
+                      >FAQ
+                      <div class="footer-sitemap-line"></div
+                    ></a>
+                  </div>
+                </div>
+                <div class="footer-sitemap-links no-ul">
+                  <div class="sitemap-title">
+                    <p class="footer-sitemap bold"><b>Visit</b></p>
+                  </div>
+                  <div class="sitemap-title">
+                    <a href="＃" class="footer-sitemap-link"
+                      >Membership
+                      <div class="footer-sitemap-line"></div
+                    ></a>
+                  </div>
+                  <div class="sitemap-title">
+                    <a href="＃" class="footer-sitemap-link"
+                      >Reservation
+                      <div class="footer-sitemap-line"></div
+                    ></a>
+                  </div>
+                  <li class="sitemap-title">
+                    <a href="＃" class="footer-sitemap-link"
+                      >Leeum store
+                      <div class="footer-sitemap-line"></div
+                    ></a>
+                  </li>
+                </div>
+                <div class="footer-sitemap-links no-ul">
+                  <li class="sitemap-title">
+                    <p class="footer-openinghour bold"><b>Opening Hours</b></p>
+                  </li>
+                  <p class="openinghour-content">Closed Mondays</p>
+                  <p class="openinghour-content">
+                    Closed on January 1, Lunar New Year’s day, Moon Festival
+                  </p>
+                  <p class="openinghour-content">
+                    Tuesday – Sunday 10:00 - 18:00 (Last admission at 17:30)
+                  </p>
+                  <p class="openinghour-content">Tel: 02-2014-6900</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="footer-brand">
+            <div class="footer-brand-img">
+              <img src="picture/leeumLogo.png" alt="Leeum" width="100%" />
+            </div>
+            <div class="footer-brand-address">
+              서울시 용산구 이태원로55길 60-16 (한남동)
+              <p>
+                Leeum Museum of Art 60-16 Itaewon-ro 55-gil, Yongsan-gu, Seoul,
+                Korea 04348
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="footer-down">
+          <div class="footer-safe-block">
+            <div class="footer-down-link-wrapper">
+              <div class="footer-down-link">
+                <a href="#">Privacy Policy</a>
+                <span style="color: #b5b5b5">|</span>
+                <a href="#">Terms and Conditions</a>
+              </div>
+              <div class="footer-copyright">
+                © Leeum Museum of Art. All Rights reserved.
+              </div>
+            </div>
+            <div class="footer-social-media-wrapper">
+              <a
+                href="#"
+                class="social-media-link img img-fit"
+                target="_blank"
+                rel="noreferrer noopener"
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="11"
+                  height="19"
+                  viewBox="0 0 11 19"
+                  fill="none"
+                >
+                  <path
+                    d="M9.40428 10.6719L9.91721 7.41297H6.75757V5.29464C6.75757 4.40351 7.19869 3.53275 8.60924 3.53275H10.066V0.757536C9.21764 0.622259 8.36045 0.549075 7.50131 0.538574C4.90077 0.538574 3.20297 2.10186 3.20297 4.928V7.41297H0.320312V10.6719H3.20297V18.5546H6.75757V10.6719H9.40428Z"
+                    fill="white"
+                  />
+                </svg>
+              </a>
+              <a
+                href="#"
+                class="social-media-link img img-fit"
+                target="_blank"
+                rel="noreferrer noopener"
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="19"
+                  height="19"
+                  viewBox="0 0 19 19"
+                  fill="none"
+                >
+                  <path
+                    d="M6.00408 9.54609C6.00408 7.88782 7.34761 6.54318 9.0054 6.54318C10.6632 6.54318 12.0074 7.88782 12.0074 9.54609C12.0074 11.2044 10.6632 12.549 9.0054 12.549C7.34761 12.549 6.00408 11.2044 6.00408 9.54609ZM4.38124 9.54609C4.38124 12.1008 6.45147 14.1716 9.0054 14.1716C11.5593 14.1716 13.6296 12.1008 13.6296 9.54609C13.6296 6.99142 11.5593 4.92059 9.0054 4.92059C6.45147 4.92059 4.38124 6.99142 4.38124 9.54609ZM12.732 4.73718C12.7319 4.95098 12.7952 5.16 12.9139 5.33781C13.0325 5.51562 13.2013 5.65423 13.3987 5.73613C13.5961 5.81802 13.8134 5.83951 14.023 5.79789C14.2327 5.75626 14.4253 5.65339 14.5765 5.50228C14.7276 5.35116 14.8306 5.15859 14.8724 4.94892C14.9142 4.73926 14.8929 4.5219 14.8112 4.32435C14.7295 4.1268 14.591 3.95792 14.4134 3.83907C14.2357 3.72022 14.0268 3.65674 13.8131 3.65666H13.8126C13.5261 3.65679 13.2514 3.77066 13.0488 3.97326C12.8462 4.17585 12.7322 4.45061 12.732 4.73718ZM5.36722 16.8784C4.48923 16.8384 4.01201 16.6921 3.69488 16.5685C3.27444 16.4048 2.97445 16.2098 2.65904 15.8947C2.34364 15.5796 2.1484 15.2799 1.98544 14.8593C1.86181 14.5422 1.71556 14.0647 1.67565 13.1865C1.63199 12.237 1.62328 11.9517 1.62328 9.54616C1.62328 7.14059 1.63271 6.85615 1.67565 5.90585C1.71564 5.0276 1.86296 4.55104 1.98544 4.23302C2.14912 3.81246 2.34407 3.51238 2.65904 3.19689C2.97402 2.88139 3.27372 2.6861 3.69488 2.52309C4.01187 2.39943 4.48923 2.25314 5.36722 2.21321C6.31646 2.16954 6.60161 2.16082 9.0054 2.16082C11.4092 2.16082 11.6946 2.17026 12.6447 2.21321C13.5227 2.25321 13.9991 2.40058 14.317 2.52309C14.7374 2.6861 15.0374 2.88182 15.3528 3.19689C15.6682 3.51195 15.8628 3.81246 16.0264 4.23302C16.1501 4.55011 16.2963 5.0276 16.3362 5.90585C16.3799 6.85615 16.3886 7.14059 16.3886 9.54616C16.3886 11.9517 16.3799 12.2362 16.3362 13.1865C16.2962 14.0647 16.1493 14.5421 16.0264 14.8593C15.8628 15.2799 15.6678 15.5799 15.3528 15.8947C15.0379 16.2095 14.7374 16.4048 14.317 16.5685C14 16.6922 13.5227 16.8385 12.6447 16.8784C11.6954 16.9221 11.4103 16.9308 9.0054 16.9308C6.60053 16.9308 6.31617 16.9221 5.36722 16.8784ZM5.29265 0.592638C4.33397 0.636309 3.67889 0.788364 3.10679 1.01104C2.51431 1.241 2.01274 1.5495 1.51154 2.05006C1.01033 2.55062 0.702709 3.05312 0.472819 3.64577C0.250206 4.21839 0.0981949 4.87331 0.0545367 5.83227C0.0101581 6.79274 0 7.0998 0 9.54609C0 11.9924 0.0101581 12.2994 0.0545367 13.2599C0.0981949 14.2189 0.250206 14.8738 0.472819 15.4464C0.702709 16.0387 1.01041 16.5418 1.51154 17.0421C2.01267 17.5425 2.51431 17.8505 3.10679 18.0811C3.67997 18.3038 4.33397 18.4559 5.29265 18.4995C6.25335 18.5432 6.55982 18.5541 9.0054 18.5541C11.451 18.5541 11.758 18.5439 12.7181 18.4995C13.6769 18.4559 14.3316 18.3038 14.904 18.0811C15.4961 17.8505 15.9981 17.5427 16.4993 17.0421C17.0005 16.5416 17.3074 16.0387 17.538 15.4464C17.7606 14.8738 17.9133 14.2189 17.9563 13.2599C17.9999 12.2987 18.0101 11.9924 18.0101 9.54609C18.0101 7.0998 17.9999 6.79274 17.9563 5.83227C17.9126 4.87324 17.7606 4.21803 17.538 3.64577C17.3074 3.05348 16.9997 2.55141 16.4993 2.05006C15.9988 1.54871 15.4961 1.241 14.9047 1.01104C14.3316 0.788364 13.6768 0.635589 12.7189 0.592638C11.7587 0.548968 11.4517 0.538086 9.00612 0.538086C6.56054 0.538086 6.25335 0.548247 5.29265 0.592638Z"
+                    fill="white"
+                  />
+                </svg>
+              </a>
+              <a
+                href="#"
+                class="social-media-link img img-fit"
+                target="_blank"
+                rel="noreferrer noopener"
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="36"
+                  height="37"
+                  viewBox="0 0 36 37"
+                  fill="none"
+                >
+                  <path
+                    d="M28.0142 13.5484C27.7792 12.6648 27.0839 11.9677 26.1992 11.7288C24.5997 11.3 18.1819 11.3 18.1819 11.3C18.1819 11.3 11.7673 11.3 10.1645 11.7288C9.28313 11.9644 8.58781 12.6615 8.34951 13.5484C7.92188 15.152 7.92188 18.5 7.92188 18.5C7.92188 18.5 7.92188 21.848 8.34951 23.4517C8.58455 24.3353 9.27986 25.0324 10.1645 25.2713C11.7673 25.7 18.1819 25.7 18.1819 25.7C18.1819 25.7 24.5997 25.7 26.1992 25.2713C27.0806 25.0357 27.7759 24.3386 28.0142 23.4517C28.4419 21.848 28.4419 18.5 28.4419 18.5C28.4419 18.5 28.4419 15.152 28.0142 13.5484Z"
+                    fill="white"
+                  />
+                  <path
+                    d="M16.1318 21.5862L21.4626 18.5L16.1318 15.4139V21.5862Z"
+                    fill="#1A1A1A"
+                  />
+                </svg>
+              </a>
+
+              <div class="select-box">
+                <button
+                  class="btn btn-secondary dropdown-toggle"
+                  type="button"
+                  id="dropdownMenuButton1"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  Family Site
+                </button>
+                <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                  <li>
+                    <a class="dropdown-item" href="#"
+                      >Samsung foundation of culture</a
+                    >
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="#">Ho-Am Art Museum</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </footer>
+    </div>
+  </body>
+</html>
